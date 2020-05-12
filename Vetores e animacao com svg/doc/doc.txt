@@ -1,0 +1,36 @@
+SVG é um padrao que foi pelo menos criador do HTML a W3C e começou a se destacar após o esquecimento do flash
+SVG é para animacao do html
+Vetor é um calculo matematico, mesmo dando zoom, a imagem não perde qualidade, o vetor não é feito de pexels mais sim de calculo
+Além disso o SVG não pesa como as imagens
+SVG é um calculo e código
+
+--------------------------------------------------------------------------------------
+
+Cada caracter diz ao path para que modo será no formado criado, conforme a lista:
+
+M = move até
+L = linha até
+H - linha horizontal até
+V = linha vertical até
+C = curva até
+S = curva suave até
+Q = curva bézier quadrática
+T = durva bézier quadrática suave até
+A = arco elíptico
+Z = fecha path
+
+---------------------------------------------------------------------------------------
+
+Usar o codepen.io para entender a tag path no svg
+
+---------------------------------------------------------------------------------------
+
+Porcentagem é uma unidade responsiva
+Pixel não é, é fixo
+-----------------------------------------------------------------
+
+Trabalhar com a biblioteca do tweenmax https://greensock.com/tweenmax/
+
+-----------------------------------------------------------------
+
+os svg são display inline, precisamos mudar no css para display block para que podemos atribuir elementos

@@ -1,0 +1,88 @@
+/* svg {
+    width: 100;
+    height: 100;
+} */
+
+body {
+    margin: 0;
+    background-color: #ffead4;
+    overflow-x: hidden; /* a partir do momento que cerca do viewport, tudo que escapar do eixo x ira ficar escondido */
+}
+
+.container-header {
+    width: 100vw; /* larura é 100% do viewport */
+}
+
+.lett-header {
+    position: absolute; /*o position tira o elemento normal da pagina */
+    left: 50%; /* posicionar no centro */
+    transform: translate(-50%); /* usando para posicionar no modo dinamico */
+    width: 80%;
+    margin-top: 10%;
+    fill: transparent;
+    animation: lett-preenchimento 0.5s ease-in-out forwards 2.5s;
+    /* forwards, estamos dizendo para animação que ela ira parar no ultimo final dela */
+}
+
+.lett-header path { /* pegando todas tags path e deu um stroke */
+    stroke-width: 2px;
+    stroke: #be253f;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: lett-tracado 5s ease-in-out forwards 1s; /* animação tracada começa antes da animação do preenchimento */
+}
+
+/* .section-dicas {
+    background-color: #EDCCD4;
+} */
+
+h1, h2 {
+
+    font-family: 'Pacifico', cursive;
+    color: #be253f;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em; /* em padrozina a unidade de medida */
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: #484848;
+    font-size: 1em;
+}
+
+.container-cards {
+    width: 80%;
+    margin: auto;
+    display: flex; /* quando chamamos o flex, é para posicionar os elementos um ao lado do outro */
+}
+
+.card {
+    background-color: white;
+    border-style: solid;
+    border-color: #be253f;
+    border-radius: 10px;
+    width: 50%; /* porcentagem vai de pai para filho */
+    padding: 20px;
+    margin: 20px;
+}
+
+@keyframes lett-preenchimento {
+    to {
+        fill: #be253f;
+    }
+}
+
+@keyframes lett-tracado {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
